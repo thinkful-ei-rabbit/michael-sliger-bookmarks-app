@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+form {
+    margin-bottom: 20px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+
+}
+
+form input {
+    text-align: center;
+    margin: 8px;
+    width: 80%;
+}
+
+.submit-form-button {
+    margin-top: 8px;
+    width: 70%
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+
+.individual-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-color: aqua;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+
+}
+.results > * {
+    margin: 8px;
+}
+
+.hidden {
+    display: none;
+}
+
+.results li {
+    width: 100%;
+    
+}
+
+.link-header-container {
+    text-align: center;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+
+.link-header-container section {
+    margin: 3px 0 3px 0;
+}
+
+.link-header-container h2 {
+    font-size: 22px;
+    margin: 3px 0 5px 0;
+}
+
+.description-container {
+    height: 80px;
+    margin-top: 12px;
+    
+}
+
+#edit-button, #delete-button {
+    margin-bottom: 8px;
+}
+
+.divider {
+    width: 100%;
+    height: 12px;
+    background-color: gray;
+}
+
+.hidden-div  {
+    display: none;
+}
