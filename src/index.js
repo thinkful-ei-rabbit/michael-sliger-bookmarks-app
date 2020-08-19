@@ -11,10 +11,8 @@ import listeners from './events';
 
 
 function main() {
-  renderImp.render();
-  listeners.handleSubmitClick();
-  listeners.handleDeleteClick();
-  listeners.handleToHideClick();
+  renderImp.render(1);
+  listeners.bindListeners();
 }
 
 main();
