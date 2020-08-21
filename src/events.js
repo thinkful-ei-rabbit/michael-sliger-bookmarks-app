@@ -35,9 +35,9 @@ const findStoreObjByID = function(id) {
 };
 
 const handleDeleteClick = function() {
-    $('.results').on('click', '#delete-button', function(e) {
+    $('main').on('click', '#delete-button', function(e) {
         const id = getElementAndReturnID(e.currentTarget);
-        const arrayIndexToRemove = storeAccess.indexOf(findStoreObjByID(id));
+        // const arrayIndexToRemove = storeAccess.indexOf(findStoreObjByID(id));
         
         // delete from api and rerender store
         api.deleteBookmarkByID(id)
@@ -50,7 +50,7 @@ const handleDeleteClick = function() {
 };
 
 const handleToHideClick = function() {
-    $('.results').on('click', '.hide-btn', function(e) {
+    $('main').on('click', '.hide-btn', function(e) {
        $(e.currentTarget).closest('li').find('#to-hide-or-not-to-hide').toggleClass('hidden-div');
     });
     $('.main-form').on('click', '.main-form-hide-btn', function(e) {
@@ -67,7 +67,7 @@ const handleFilter = function() {
 };
 
 const handleEditClick = function() {
-    $('.results').on('click', '#edit-button', function(e){
+    $('main').on('click', '#edit-button', function(e){
         const elID = getElementAndReturnID(e.currentTarget);
         $(e.currentTarget).closest('li').find('.editable').replaceWith(render.editTemplate);
         // event listener on new button

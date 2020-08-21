@@ -55,8 +55,8 @@ const getTruthFromAPIandStore = function(filter) {
 const render = function(filter) {
     getTruthFromAPIandStore(filter)
         .then(str => {
-            $('.results').empty();
-            $('.results').html(str);
+            $('main').empty();
+            $('main').html(`<ul class="results"><${str.join('')}</ul>`);
         }).catch(e => {
             store.setError(e.message);
         });
